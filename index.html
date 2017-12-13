@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Overlock:400,400i,700,700i|Share:400,700|Space+Mono:400,700|Timmana" rel="stylesheet">
+
+
+
+    <title>Project 4</title>
+</head>
+<body>
+    <header>
+        <div class="attribution">
+             <p> ©2017 Created by Amber Lahav | Powered using the <a href="http://developer.foodessentials.com/page">FoodEssentials API</a> | Food vector created by <a href="https://www.freepik.com/free-photos-vectors/food">Dooder - Freepik.com</a></p>
+        </div>
+        <div class="wrapper">
+            <h1>The Snack Hack</h1>
+            <p>Find the right snack, prevent an attack.</p>
+            <section class="questions">
+                    <form action="">
+                        <h2>What are you craving?</h2>
+                        <input type="text" id="snack" value="">
+                        <label for="snack"></label>
+
+                        <h2>What is your allergy or food restriction?</h2>
+                        <input type="text" id="allergy">
+                        <label for="allergy"></label>
+                        <a href="#suggestions" class="submit">Show Recommendations</a>
+                        <!-- <input class="submit" type="submit" value="Show Recommendations" data-ng-href="#suggestions"> -->
+                    </form>  
+            </section>
+        </div>
+    </header>
+    <section class="suggestions" id="suggestions">
+        <div class="wrapper">
+            <div class="have" id="have">
+                <h2>You should try:</h2>
+                <ul class="have" id="haveList">
+
+                </ul>
+            </div>
+            <div class="avoid" id="avoid">
+                <h2>You should avoid:</h2>
+                <ul class="avoid" id="avoidList"></ul>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="shoppingListSection">
+        <a href="shoppingList.html"><h2>View my shopping list</h2></a>
+        <ul id="shoppingList"></ul>
+    </section> -->
+   
+<!-- <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script> -->
+<!-- <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD31peiQkSrW3lWmgQDFUq7Jll1OpjcHOs",
+        authDomain: "alleryapp.firebaseapp.com",
+        databaseURL: "https://alleryapp.firebaseio.com",
+        projectId: "alleryapp",
+        storageBucket: "alleryapp.appspot.com",
+        messagingSenderId: "582398877025"
+    };
+    firebase.initializeApp(config);
+</script> -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="jquery.smooth-scroll.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

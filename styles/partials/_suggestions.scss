@@ -1,0 +1,186 @@
+.suggestions {
+    height: 150vh;
+    padding-top: 50px;
+    p {
+        color: darken(rgb(218, 107, 3), 10);
+        font-family: 'Share', cursive;
+        font-weight: 400;
+        font-size: 1.6rem;
+        display: none;
+       
+    }
+   
+
+    button {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background:blue;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    li {
+        background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),url(../images/snackBackground.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        padding: 70px;
+        width: 160%;
+        height: 160%;
+        margin-top: 10px;
+        border-top: 2px solid rgb(236, 236, 236);
+        font-family: 'Share', cursive;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    a {
+        display: block;
+        font-family: 'Share', cursive;
+        font-weight: 400;
+        font-size: 1.6rem;
+        padding: 5px 30px 10px;
+        &:hover {
+            color:rgb(218, 107, 3); 
+        }
+    }
+
+    h2 {
+        font-family: 'Timmana', sans-serif;
+        font-size: 2.6rem;
+        margin: 50px 0 0 0;
+        color: rgb(218, 107, 3);
+        text-align: center;
+    }
+
+    .display {
+        display: block;
+         width: 150%;
+         padding: 0 30px;
+    }
+
+    .wrapper {
+        display: flex;
+
+    }
+
+    .have, .avoid {
+        width: 50%;
+    }
+
+    .have li {
+        color: rgb(5, 133, 5);
+        &:hover {
+            color: rgb(13, 201, 13);
+        }
+    }
+
+    .avoid li {
+        color: rgb(179, 6, 6);
+        &:hover {
+            color: red;
+        }
+    }
+
+    .back {
+        display: none;
+    }
+    .backDisplay {
+        display: block;
+        position: fixed;
+    }
+
+    // media queries:
+
+    @media (max-width: 980px) {
+        li {
+            font-size: 1.5rem;
+            padding: 50px;
+            width: 140%;
+        }
+        a {
+            font-size: 1.4rem;
+            padding: 20px 20px;   
+        
+        }
+        p {
+            font-size: 1.4rem;
+        }
+    }
+    @media (max-width: 700px) {
+        padding-top: 0;
+        li {
+            font-size: 1.2rem;
+            padding: 45px;
+            width: 130%;
+        }
+        a {
+            font-size: 1.2rem;
+            padding: 10px 20px;   
+        
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+      @media (max-width: 660px) {
+        li {
+            font-size: 1.1rem;
+            padding: 35px;
+            width: 120%;
+        }
+        a {
+            font-size: 1.1rem;
+            padding: 10px 10px;   
+        
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+     @media (max-width: 600px) {
+        li {
+            font-size: 1.1rem;
+            padding: 22px;
+            width: 120%;
+        }
+        a {
+            font-size: 1.1rem;
+            padding: 10px 10px;   
+        
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+    @media (max-width: 550px) {
+        li {
+            font-size: 1.1rem;
+            padding: 15px;
+            width: 120%;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        a {
+            font-size: 1.1rem;
+            padding: 10px 10px;   
+        
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+}
